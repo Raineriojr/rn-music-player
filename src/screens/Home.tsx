@@ -91,10 +91,6 @@ export const Home = () => {
   React.useEffect(() => {
     function resetWhenFinishMusic() {
       if (currentTime == totalDuration || !isPlaying) {
-        setIsPlaying(false);
-        setCurrentTime(0);
-        setTotalDuration(0)
-        setMusicPlaying(null)
         clearInterval(interval)
       }
     }
@@ -104,6 +100,7 @@ export const Home = () => {
 
   React.useEffect(() => {
     function resetWhenChangeMusic() {
+      setIsPlaying(false)
       setTotalDuration(0);
       setCurrentTime(0);
       setMusicPlaying(null)
