@@ -61,8 +61,8 @@ export const PlayerComponent = ({
       <View>
         <ProgressBar percent={statusProgressBar} />
         <View style={Style.durationContainer}>
-          <Text style={Global.title}>{formattedTime(totalDuration).time}</Text>
-          <Text style={Global.title}>{formattedTime(currentTime).time}</Text>
+          <Text style={Style.time}>{formattedTime(totalDuration).time}</Text>
+          <Text style={Style.time}>{formattedTime(currentTime).time}</Text>
         </View>
       </View>
     </View>

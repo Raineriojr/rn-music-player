@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import colors from '../../styles/colors.json';
 
 export const Style = StyleSheet.create({
   playerContainer: {
@@ -13,5 +14,11 @@ export const Style = StyleSheet.create({
   durationContainer: {
     flexDirection: 'row',
     justifyContent: "space-between"
+  },
+
+  time: {
+    fontSize: 14,
+    fontWeight: '400',
+    color: colors.title
   }
 })
